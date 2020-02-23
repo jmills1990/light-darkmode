@@ -166,7 +166,7 @@ div[class ^='area-'] span {
     cursor: pointer;
 }
 
-
-  a:hover {
-      
-  }
+.hoverme {
+    color:red;
+    background-color:blue;
+}
