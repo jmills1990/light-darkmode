@@ -5,5 +5,3 @@ slider.oninput = () => {
 }
 
 let test = document.getElementById('cool');
-
-time to get some changes
