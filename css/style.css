@@ -72,8 +72,8 @@ a {
 .img img {
     width: 350px;
     display: block;
-    padding-top: 35px;
-    padding-left: 10px;
+    padding-top: 10px;
+    padding-left: 25px;
 }
 
 .img {
@@ -164,9 +164,4 @@ div[class ^='area-'] span {
     border-radius: 10px;
     background: #48CFAD;
     cursor: pointer;
-}
-
-.hoverme {
-    color:red;
-    background-color:red;
 }
