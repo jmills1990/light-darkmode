@@ -165,3 +165,116 @@ div[class ^='area-'] span {
     background: #48CFAD;
     cursor: pointer;
 }
+
+
+
+.colissioncolor {
+    --dark-blue: #1c0c33;
+    --hot-pink: #FFCE54;
+  }
+  
+  @import url('https://fonts.googleapis.com/css?family=Poppins');
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: var(--dark-blue);
+    margin: 0;
+  }
+  
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    height: 100vh;
+  }
+  
+  .title {
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    color: #3C3B3D;
+    font-size: 20px;
+    margin-bottom: 50px;
+  }
+  
+  .collision {
+    text-decoration: none;
+    color: #3C3B3D;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    display: block;
+    height: 70px;
+    width: 300px;
+    overflow: hidden;
+    line-height: 70px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .collision::before,
+  .collision::after {
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 20px;
+    background: var(--hot-pink);
+    top: 50%;
+    border-radius: 50%;
+    z-index: -1;
+  }
+  
+  .collision::before {
+    transform: translate(-50%, -50%);
+    left: -20px;
+  }
+  
+  .collision::after {
+    transform: translate(50%, -50%);
+    right: -20px;
+  }
+  
+  .collision:hover::before {
+    animation: move-left .8s both;
+    animation-direction: alternate;
+  }
+  .collision:hover::after {
+    animation: move-right .8s both;
+    animation-direction: alternate;
+  }
+  
+  @keyframes move-left {
+    0% {
+      left: -20px;
+    }
+    50% {
+      left: 50%;
+      width: 20px;
+      height: 20px;
+    }
+    100% {
+      left: 50%;
+      height: 400px;
+      width: 400px;
+    }
+  }
+  
+  @keyframes move-right {
+    0% {
+      right: -20px;
+    }
+    50% {
+      right: 50%;
+      width: 20px;
+      height: 20px;
+    }
+    100% {
+      right: 50%;
+      height: 400px;
+      width: 400px;
+    }
+  }
+  
