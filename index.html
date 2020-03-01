@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <meta name=”viewport” content=”width=device-width, initial-scale=1″>
 
-
+ 
     <title>Dark Light Mode</title>
 </head>
 
@@ -19,6 +19,16 @@
             </div>
         </header>
     </div>
+
+
+    <p><button onclick="clickCounter()" type="button">Click me!</button></p>
+    <div id="result"></div>
+    <p>Click the button to see the counter increase.</p>
+    <p>Close the browser tab (or window), and try again, and the counter will continue to count (is not reset).</p>
+     
+    <button type="button" onclick="onClick()">Click me</button>
+    <p>Clicks: <a id="clicks">0</a></p>
+
 
     <div class="container main-content">
         <div class="text">
@@ -41,28 +51,32 @@
 
         <div class="area-1 colissioncolor" button-wrapper animated shake delay-3s">
            <div class="collision"><h4>Hover me! </h4>
-            <span>Subset</span>
           </div></div>
 
-        <div class="area-2">
-            <h2>Shakeing</h2>
-            <span>Subset</span>
+        <div class="area-2 wiggle">
+            <div class= "shaking wiggle">
+            <h2>Shaking</h2></div>
         </div>
         <div class="area-3">
             <h2>Left-right</h2>
             <span>Subset yes</span>
         </div>
         <div class="area-4">
-            <h2>Top-Down</h2>
-            <span>Subset</span>
+            <div class=>
+                <span>Inbox</span>
+                <span class=><div id="result"></div></span>
+            </div>
+
         </div>
     </div>
-</div>
+
+
+
     <div class="range">
         <input type="range" min="1" max="100" value="0" class="slider" id="myRange">
     </div>
 
-    <script src="js/script.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 
 </body>
 
