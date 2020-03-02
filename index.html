@@ -7,7 +7,20 @@
     <link rel="stylesheet" href="css/style.css">
     <meta name=”viewport” content=”width=device-width, initial-scale=1″>
 
- 
+ <script    >
+ function clickCounter() {
+    if (typeof (Storage) !== "undefined") {
+        if (localStorage.clickcount) {
+            localStorage.clickcount = Number(localStorage.clickcount) + 1;
+        } else {
+            localStorage.clickcount = 1;
+        }
+        document.getElementById("result").innerHTML =  localStorage.clickcount;
+    } else {
+        document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+    }
+}
+</script>
     <title>Dark Light Mode</title>
 </head>
 
@@ -20,14 +33,6 @@
         </header>
     </div>
 
-
-    <p><button onclick="clickCounter()" type="button">Click me!</button></p>
-    <div id="result"></div>
-    <p>Click the button to see the counter increase.</p>
-    <p>Close the browser tab (or window), and try again, and the counter will continue to count (is not reset).</p>
-     
-    <button type="button" onclick="onClick()">Click me</button>
-    <p>Clicks: <a id="clicks">0</a></p>
 
 
     <div class="container main-content">
@@ -44,7 +49,9 @@
             <div class="img">
                 <img src="img/logo.png" alt="">
             </div>
-        <a href="#">Click me</a>
+            <div class="notification"></div>
+        <button onclick="clickCounter()" class="button1 notification" type="button">Click me</button>
+        <span class="badge" id="result"></span>
     </div>
     <div class="availablity">
         <h3>Hover Selections</h3>
@@ -62,10 +69,7 @@
             <span>Subset yes</span>
         </div>
         <div class="area-4">
-            <div class=>
-                <span>Inbox</span>
-                <span class=><div id="result"></div></span>
-            </div>
+
 
         </div>
     </div>
