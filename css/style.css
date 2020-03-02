@@ -170,7 +170,7 @@ div[class ^='area-'] span {
 
 .colissioncolor {
     --dark-blue: #1c0c33;
-    --hot-pink: #DE3C3C;
+    --hot-pink: #1c0c33;
   }
   
   @import url('https://fonts.googleapis.com/css?family=Poppins');
@@ -202,7 +202,7 @@ div[class ^='area-'] span {
   
   .collision {
     text-decoration: none;
-    color: #3C3B3D;
+    color: #DE3C3C;
     font-weight: bold;
     display: block;
     height: 30px;
@@ -278,7 +278,7 @@ div[class ^='area-'] span {
 
   .shaking {
     text-decoration: none;
-    color: #3C3B3D;
+    color: #08FFC8;
     font-weight: bold;
     display: block;
     height: 30px;
@@ -310,7 +310,7 @@ div[class ^='area-'] span {
 
   .shaking {
     text-decoration: none;
-    color: #3C3B3D;
+    color: #08FFC8;
     font-weight: bold;
     display: block;
     height: 30px;
@@ -320,32 +320,6 @@ div[class ^='area-'] span {
     position: relative;
   }
 
-
-
-
-  .notification {
-    background-color: #555;
-    color: white;
-    text-decoration: none;
-    padding: 15px 26px;
-    position: relative;
-    display: inline-block;
-    border-radius: 2px;
-  }
-  
-  .notification:hover {
-    background: red;
-  }
-  
-  .notification .badge {
-    position: absolute;
-    top: -10px;
-    right: -10px;
-    padding: 5px 10px;
-    border-radius: 50%;
-    background: red;
-    color: white;
-  }
 
   .button1 {
     background-color: var(--h3Btnbleft);
@@ -359,4 +333,13 @@ div[class ^='area-'] span {
     right: 50%;
     transform: translateX(-50%);
     top: 50px;
+  }
+
+  .something1 {
+    color: #78BDC4;
+
+  }
+  .something2 {
+    color:  #FFA45B;
+
   }
