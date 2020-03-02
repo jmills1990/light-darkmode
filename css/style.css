@@ -346,3 +346,17 @@ div[class ^='area-'] span {
     background: red;
     color: white;
   }
+
+  .button1 {
+    background-color: var(--h3Btnbleft);
+    padding: 15px 35px;
+    color: var(--white);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+    top: 50px;
+  }
