@@ -1,0 +1,50 @@
+
+
+.buttonfont {
+    background-color: #028090;
+    border-color: #028090;
+}
+.leftside {
+left:10px;
+}
+
+.container {
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    position: relative;
+    overflow: hidden;
+    width: 500px;
+    max-width: 100%;
+    min-height: 480px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: -20px 0 50px;
+    left: 300px;
+    background-color: #028090;
+}
+li {
+    border: 1px solid #140D4F;
+    padding: 5px 5px;
+    width: 300px;
+    list-style: none;
+    background-color: #00A896;
+    
+}
+li span { 
+    padding-left: 10px; 
+    cursor: default;
+}
+.checked {
+text-decoration: line-through; font-weight: bold; color: #c00;
+}
+
+.todomodule {
+
+    width: 25%;
+    border: 1px solid black;
+    padding: 20px;
+    margin: 20px;
+}
+
+.test{}
